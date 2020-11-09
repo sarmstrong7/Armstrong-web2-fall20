@@ -1,0 +1,142 @@
+@import './vendor/normalize';
+@import './partials/colors';
+@import './partials/mixins';
+@import './partials/typography';
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&family=Xanh+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Kaushan+Script&family=Montserrat&family=Xanh+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Kaushan+Script&family=Montserrat&family=Poiret+One&family=Xanh+Mono:ital@1&display=swap');
+
+
+@media (min-width: 480px){
+
+    .header__bar{
+        background-color: gray;
+        text-align: left;
+        margin: 0px 0px 0px 0px;
+    }
+.header__bar h1{
+    display: inline-block;
+    font-size: $header_font_size;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left:10px;
+    color: $header_footer_font-color;
+    font-family: $header_footer-font;
+}
+.header__bar figure{
+    margin: 0px 0px 0px 0px
+}
+
+.logo{
+    border-radius: 100px;
+    height: 65px;
+    width: 65px;
+    margin-left: 11px;
+    margin-right: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    float: left;
+}
+
+nav{
+    ul{
+        background-color: $nav_bar-color;
+        padding: 25px;
+        list-style-type: none;   
+        margin: 0px 0px 0px 0px;
+        font-family: $navbar-font;
+        font-size: $navbar_font_size;
+    li{
+        float: left;
+        
+    }
+
+    }
+}
+
+
+li a{
+    display: inline-block;
+    font-size: .99em;
+    word-spacing:0.625;
+    letter-spacing: 0.625;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 30px;
+    color:rgb(58, 56, 56);
+    text-decoration: none;
+} 
+li a:hover{
+    text-decoration: underline;
+   }
+
+
+   .figure{
+       @include margin;
+
+}
+
+.img{
+
+    @include margin;
+    width: 100%;
+    height: auto;
+
+    
+
+}
+
+p{
+    font-weight: bold;
+    font-family: $body-font;
+    font-size: $body_font_size;
+    text-align: center;
+    color:rgb(58, 56, 56);  
+}
+
+hr{
+    margin: 0px 0px 0px 0px;
+}
+
+.section__2{
+display: grid;
+grid-template-columns: auto auto;
+justify-content: center;
+align-content: center;
+gap: 30px;
+height: auto;
+width: 100%;
+padding-top: 30px;
+padding-bottom: 30px;
+background-color:rgb(240, 240, 240);
+}
+
+footer{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+
+    p{
+        margin: 0px 0px 0px 0px;
+        color: $header_footer_font-color;
+        font-family: $header_footer-font;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+//end of @media
+
+}
